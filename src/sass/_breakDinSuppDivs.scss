@@ -1,0 +1,36 @@
+.food{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 6rem;
+  width: 6rem;
+  @media (min-width: 320px) and (max-width: 799px){
+    height: 10rem;
+    width: 10rem;
+  }
+  @media (min-width: 800px) {
+    height: 15rem;
+    width: 15rem;
+  }
+  border-radius: 15%;
+  &:hover{
+    align-items: center;
+    box-shadow: 0 0 130px 20px lightpink;
+    background-color: rgba(20, 200, 20, 0.4);
+  }
+}
+
+.breakfast{
+  @extend .food;
+  background: lightpink url("../images/breakfast.png") no-repeat center;
+}
+
+.dinner{
+  @extend .food;
+  background: lightpink url("../images/dinner.png") no-repeat center;
+}
+
+.supper{
+  @extend .food;
+  background: lightpink url("../images/supper.png") no-repeat center;
+}

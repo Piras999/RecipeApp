@@ -1,0 +1,171 @@
+.mainIcons, .mainIconsAfterClick {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightcyan;
+  color: white;
+  font-size: 1.5em;
+  text-align: center; }
+  @media (min-width: 550px) and (max-width: 799px) {
+    .mainIcons, .mainIconsAfterClick {
+      flex-direction: row;
+      justify-items: center; } }
+  @media (min-width: 800px) {
+    .mainIcons, .mainIconsAfterClick {
+      flex-direction: row;
+      font-size: 180%; } }
+
+.mainIconsAfterClick {
+  height: auto; }
+  @media (min-width: 550px) and (max-width: 799px) {
+    .mainIconsAfterClick {
+      flex-direction: row;
+      justify-items: center;
+      align-items: flex-start; } }
+  @media (min-width: 800px) {
+    .mainIconsAfterClick {
+      flex-direction: row;
+      font-size: 180%;
+      align-items: flex-start; } }
+
+.afterClick, .afterClickBreakfast, .afterClickDinner, .afterClickSupper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6rem;
+  width: 6rem;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  border-radius: 15%;
+  box-shadow: 0 0 130px 20px lightpink; }
+  @media (min-width: 440px) and (max-width: 799px) {
+    .afterClick, .afterClickBreakfast, .afterClickDinner, .afterClickSupper {
+      height: 10rem;
+      width: 10rem; } }
+  @media (min-width: 800px) {
+    .afterClick, .afterClickBreakfast, .afterClickDinner, .afterClickSupper {
+      height: 15rem;
+      width: 15rem; } }
+
+.afterClickBreakfast {
+  background: rgba(20, 200, 20, 0.4) url(images/breakfast.png) no-repeat center;
+  background-size: contain; }
+  @media (min-width: 440px) {
+    .afterClickBreakfast {
+      background-size: auto; } }
+
+.afterClickDinner {
+  background: rgba(20, 200, 20, 0.4) url(images/dinner.png) no-repeat center;
+  background-size: contain; }
+  @media (min-width: 440px) {
+    .afterClickDinner {
+      background-size: auto; } }
+
+.afterClickSupper {
+  background: rgba(20, 200, 20, 0.4) url(images/supper.png) no-repeat center;
+  background-size: contain; }
+  @media (min-width: 440px) {
+    .afterClickSupper {
+      background-size: auto; } }
+
+.food, .breakfast, .dinner, .supper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 15%; }
+  @media (min-width: 320px) and (max-width: 799px) {
+    .food, .breakfast, .dinner, .supper {
+      height: 10rem;
+      width: 10rem; } }
+  @media (min-width: 800px) {
+    .food, .breakfast, .dinner, .supper {
+      height: 15rem;
+      width: 15rem; } }
+  .food:hover, .breakfast:hover, .dinner:hover, .supper:hover {
+    align-items: center;
+    box-shadow: 0 0 130px 20px lightpink;
+    background-color: rgba(20, 200, 20, 0.4); }
+
+.breakfast {
+  background: lightpink url(images/breakfast.png) no-repeat center; }
+
+.dinner {
+  background: lightpink url(images/dinner.png) no-repeat center; }
+
+.supper {
+  background: lightpink url(images/supper.png) no-repeat center; }
+
+.invisible {
+  display: none; }
+
+.recipeDiv {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  align-content: space-between;
+  border: 2px solid white;
+  color: black;
+  border-radius: 30px; }
+  @media (min-width: 800px) {
+    .recipeDiv {
+      width: 50rem; } }
+
+.dishPicture {
+  background-size: cover;
+  border: 3px solid white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 200px;
+  width: 200px;
+  border-radius: 10%; }
+  @media (min-width: 800px) {
+    .dishPicture {
+      height: 300px;
+      width: 300px; } }
+
+.title {
+  height: auto; }
+
+.recipe {
+  height: auto; }
+
+.randomFoodButton {
+  outline: none;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  border-radius: 50%;
+  background: url(images/randomButton/cropped-dice-favicon.png) no-repeat center;
+  background-size: contain; }
+  .randomFoodButton:hover {
+    box-shadow: 0 0 130px 20px lightpink; }
+  @media (min-width: 440px) and (max-width: 799px) {
+    .randomFoodButton {
+      height: 6rem;
+      width: 6rem; } }
+  @media (min-width: 800px) {
+    .randomFoodButton {
+      height: 10rem;
+      width: 10rem; } }
+
+.containerForFood {
+  display: flex;
+  height: 25vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around; }
+  @media (min-width: 440px) and (max-width: 799px) {
+    .containerForFood {
+      height: auto; } }
+  @media (min-width: 800px) {
+    .containerForFood {
+      height: auto; } }
+

@@ -1,0 +1,24 @@
+.randomFoodButton{
+  outline: none;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  border-radius: 50%;
+  background: url("../images/randomButton/cropped-dice-favicon.png") no-repeat center;
+  background-size: contain;
+  &:hover{
+    box-shadow: 0 0 130px 20px lightpink;
+  }
+  @media (min-width: 440px) and (max-width: 799px){
+    height: 6rem;
+    width: 6rem;
+  }
+  @media (min-width: 800px) {
+    height: 10rem;
+    width: 10rem;
+  }
+}

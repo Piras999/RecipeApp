@@ -1,16 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import MainButton from "./button.jsx"
 
-
-export default class Master extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {}
-    }
-
+class Master extends React.Component {
     render() {
         return (
-            <div>Heloo!!</div>
+            <MainButton/>
         )
     }
 }
+
+export default Master;
