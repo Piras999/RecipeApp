@@ -112,6 +112,7 @@
   align-content: space-between;
   border: 8px solid white;
   color: white;
+  font-family: 'Caveat Brush', sans-serif;
   border-radius: 30px; }
   @media (min-width: 800px) {
     .recipeDiv {
@@ -132,11 +133,9 @@
       width: 300px; } }
 
 .title {
-  font-family: 'Indie Flower', cursive;
   height: auto; }
 
 .recipe {
-  font-family: 'Indie Flower', cursive;
   height: auto; }
 
 .randomFoodButton {
