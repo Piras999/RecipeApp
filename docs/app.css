@@ -103,18 +103,22 @@
   display: none; }
 
 .recipeDiv {
+  background-image: url(images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-flow: column;
   align-items: center;
   align-content: space-between;
-  border: 2px solid white;
-  color: black;
+  border: 8px solid white;
+  color: white;
   border-radius: 30px; }
   @media (min-width: 800px) {
     .recipeDiv {
       width: 50rem; } }
 
 .dishPicture {
+  box-shadow: 0 0 110px 10px white;
   background-size: cover;
   border: 3px solid white;
   margin-top: 50px;
@@ -128,9 +132,11 @@
       width: 300px; } }
 
 .title {
+  font-family: 'Indie Flower', cursive;
   height: auto; }
 
 .recipe {
+  font-family: 'Indie Flower', cursive;
   height: auto; }
 
 .randomFoodButton {

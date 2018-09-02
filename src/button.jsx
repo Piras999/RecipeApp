@@ -66,7 +66,8 @@ class MainButton extends React.Component {
         fetch('https://randomfoodapp-7751c.firebaseio.com/breakfasts.json')
             .then(r => r.json())
             .then(id => {
-                let randomBreakfast = id[Math.floor((Math.random() * id.length))];
+                const tmp = id.filter(({ title }) => title !== this.state.title);
+                let randomBreakfast = tmp[Math.floor((Math.random() * tmp.length))];
                 this.setState({
                     title: randomBreakfast.title,
                     recipe: randomBreakfast.recipe,
@@ -120,7 +121,8 @@ class MainButton extends React.Component {
         fetch('https://randomfoodapp-7751c.firebaseio.com/dinners.json')
             .then(r => r.json())
             .then(id => {
-                let randomDinner = id[Math.floor((Math.random() * id.length))];
+                const tmp = id.filter(({ title }) => title !== this.state.title);
+                let randomDinner = tmp[Math.floor((Math.random() * tmp.length))];
                 this.setState({
                     title: randomDinner.title,
                     recipe: randomDinner.recipe,
@@ -174,7 +176,8 @@ class MainButton extends React.Component {
         fetch('https://randomfoodapp-7751c.firebaseio.com/suppers.json')
             .then(r => r.json())
             .then(id => {
-                let randomSupper = id[Math.floor((Math.random() * id.length))];
+                const tmp = id.filter(({ title }) => title !== this.state.title);
+                let randomSupper = tmp[Math.floor((Math.random() * tmp.length))];
                 this.setState({
                     title: randomSupper.title,
                     recipe: randomSupper.recipe,
