@@ -6,3 +6,5 @@ After choose section and push a dice random recipe shows up.
 App is fully responsive and it is working but still need a hours of work to end it.
 
 used: JavaScript/React, Sass
+
+https://piras999.github.io/RecipeApp/
